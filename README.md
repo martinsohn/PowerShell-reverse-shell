@@ -1,11 +1,13 @@
 # PowerShell-reverse-shell
- 
+Reverse TCP shell in PowerShell for fun. Made in spring 2020 with inspiration from (and a few fixes to) [samratashok/nishang Invoke-PowerShellTcp.ps1](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) and [PoweShell: Encrypt TCP Client-Server Traffic with a self-signed X509 Certificate](https://cyberwardog.blogspot.com/2016/08/poweshell-encrypt-tcp-client-server.html)
+Reverse TCP shell in PowerShell for fun. Made in spring 2020 with inspiration from  that fixes a few things.
+
 ## powershell-reverse-shell.ps1
-Reverse TCP shell in PowerShell for fun. Made in spring 2020 with inspiration from [samratashok/nishang Invoke-PowerShellTcp.ps1](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) that fixes a few things.
+Basic TCP reverse shell with no encryption.
 
 ## powershell-reverse-shell-DNS-TLS.ps1
-An extension of the basic tool to:
-* Fetch C2 IP and port via DNS over HTTPS (My domain 'powershell-reverse-shell.demo.martinsohn.dk' in the code has A-record: 127.0.0.1 and TXT-record: 13337)
+An extension of the basic shell to:
+* Fetch C2 IP and port via DNS over HTTPS (My domain 'powershell-reverse-shell.demo.martinsohn.dk' in the code has the A-record: 127.0.0.1 and TXT-record: 13337)
 * Encrypt C2 communication (see Netcat bullet in *Listener tips* section below)
 
 #### Demonstration
