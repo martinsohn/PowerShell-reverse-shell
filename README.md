@@ -33,7 +33,7 @@ Basic TCP reverse shell with no encryption.
 
 ## powershell-reverse-shell-DNS-TLS.ps1
 An extension of the basic shell to:
-* Fetch C2 IP and port via DNS over HTTPS (My domain 'powershell-reverse-shell.demo.martinsohn.dk' in the code has the A-record: 127.0.0.1 and TXT-record: 13337)
+* Fetch C2 IP and port via DNS over HTTPS (e.g. 'powershell-reverse-shell.demo.example.com' would need an A-record: 127.0.0.1 and TXT-record: 13337)
 * Encrypt C2 communication (see Netcat bullet in *Listener tips* section below)
 
 #### Demonstration
